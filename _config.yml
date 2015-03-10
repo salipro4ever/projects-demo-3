@@ -1,0 +1,10 @@
+# Site settings
+title: Health services
+author: SaliproPham
+author_blog: http://admin.blogit.info
+description: Morbi condimentum, nunc non ornare dignissim, tellus eros molestie turpis, eu vehicula metus quam ac tellus aenean cursus massa in nulla suscipit lacinia in at eros.
+baseurl: ""
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown

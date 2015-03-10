@@ -1,0 +1,98 @@
+---
+layout: default
+---
+
+<div class="category" role="main">
+    <section id="s-category">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="https://www.brainstormforce.com/demos/imedica/wp-content/uploads/2015/02/doc1-450x539.jpg" alt="..." style="max-width: 100%;margin: 0 auto;">
+                        <div class="caption">
+                            <h3>Dr. Jane Doe</h3>
+                            <p>Chuyen khoa than kinh</p>
+                            <div class="cat-info">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet commodo consequat. Duis autem vel eum iriure tation dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcor.
+                                <br>
+                                <i class="fa fa-angle-double-right"></i>&nbsp; Truong khoa Nhi<br>
+                                <i class="fa fa-angle-double-right"></i>&nbsp; GD. BV XYZ<br>
+                                <i class="fa fa-angle-double-right"></i>&nbsp; Tren 100 nam kinh nghiem<br>
+                            </div>
+                            <div class="cat-stats">
+                                <div>
+                                    <i class="fa fa-book"></i>
+                                    <span class="count">120</span>
+                                </div>
+                                <div>
+                                    <i class="fa fa-heart"></i>
+                                    <span class="count">1230</span>
+                                </div>
+                                <div>
+                                    <i class="fa fa-eye"></i>
+                                    <span class="count">12930</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="topic-timeline-cont">
+                        <div class="time-column"></div>
+                        <div class="topic-timeline">
+                            {% assign array = "1|2|0|0|0" | split: "|" %}
+                            {% for item in array %}
+                            <div class="topic">
+                                <h4 class="topic-title"><a href="./detail.html">How can I use ajax jquery to redirect to another page controller action</a></h4>
+
+                                <p class="topic-snippet">Morbi condimentum, nunc non ornare dignissim, tellus eros molestie turpis, eu
+                                    vehicula metus quam
+                                    ac tellus aenean cursus massa in nulla suscipit lacinia in at eros
+                                </p>
+                                <div class="topic-stats">
+                                    <span><i class="fa fa-calendar"></i>20/02/2015</span>
+                                    <span><i class="fa fa-user"></i>Mr Jonh</span>
+                                    <span><i class="fa fa-eye"></i>420</span>
+                                    <span><i class="fa fa-comments"></i>5</span>
+
+                                </div>
+                                <div class="topic-tag">
+                                    <a href="#"><span>than kinh</span></a>
+                                    <a href="#"><span>noi khoa</span></a>
+                                </div>
+                                <span class="topic-anchor"></span>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section id="s-topics">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="topic-tags-cont">
+                        <h4>Chủ đề</h4>
+                        <ul>
+                            <li><a href="#">ngoai than kinh</a></li>
+                            <li><a href="#">noi khoa</a></li>
+                            <li><a href="#">co xuong khop</a></li>
+                            <li><a href="#">ngoai than</a></li>
+                            <li><a href="#">ngoai kinh</a></li>
+                            <li><a href="#">than kinh</a></li>
+                            <li><a href="#">ngoai kinh than </a></li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+</div>

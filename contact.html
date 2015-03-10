@@ -1,0 +1,86 @@
+---
+layout: default
+---
+
+<div class="contact" role="main">
+    <section id="s-contact">
+        <div class="container">
+            <div class="contact-map-cont">
+                <div id="gmap"></div>
+            </div>
+            <div class="contact-form-cont">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="contact-form">
+                            <h3>Form</h3>
+                            <div class="">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Name</label>
+                                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Content</label>
+                                        <textarea class="form-control" rows="10"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-default">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="contact-info">
+                            <h3>Liên hệ</h3>
+                            <div class="">
+                                <p>
+                                    <i class="fa fa-map-marker"></i> Clinic, 123 Fifth Avenue,
+                                    New York, NY 10160, USA
+                                </p>
+                                <p>
+                                    <i class="fa fa-phone"></i> +846541456546
+                                </p>
+                                <p>
+                                    <i class="fa fa-envelope-o"></i> email@gmail.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="http://suga.vn/original/site/js/jquery.gmap.min.js"></script>
+
+<script type="text/javascript">
+    jQuery(document).ready(function(){
+        jQuery('#gmap').gMap({
+            controls: {
+                panControl: false,
+                zoomControl: true,
+                mapTypeControl: true,
+                scaleControl: false,
+                streetViewControl: false,
+                overviewMapControl: false
+            },
+            address: "Hồ Văn Huê, Thành phố Hồ Chí Minh, Hồ Chí Minh, Việt Nam",
+            zoom: 13,
+            markers:[
+                {
+                    address: "Hồ Văn Huê, Thành phố Hồ Chí Minh, Hồ Chí Minh, Việt Nam",
+                    html: "<b>ThanksLab Co.</b><br><hr>",
+                    popup: false
+                }
+            ]
+        });
+    });
+</script>
